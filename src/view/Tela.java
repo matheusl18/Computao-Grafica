@@ -19,6 +19,10 @@ public class Tela extends JPanel {
 		g2d.setColor(Color.MAGENTA);
 		g2d.setStroke(new BasicStroke(10));
 		g2d.drawLine(10, 10, 120, 220);
+		g2d.drawLine(50, 10, 160, 220);
+		g2d.drawLine(10, 10, 50, 10);
+		g2d.drawLine(120, 220, 160, 220);
+		
 		//g2d.drawLine(x1, y1, x2, y2);
 		
 	}
