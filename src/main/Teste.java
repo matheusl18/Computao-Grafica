@@ -1,6 +1,7 @@
-package view;
-
+package main;
 import javax.swing.SwingUtilities;
+
+import controller.Controller;
 
 public class Teste {
 	
@@ -15,7 +16,7 @@ public class Teste {
 	
 	
 	public static void createAndShowGUI() {
-		new Janela();
+		new Controller();
 	}
 
 }
