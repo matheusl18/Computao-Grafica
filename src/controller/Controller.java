@@ -26,8 +26,9 @@ public class Controller {
 		public void stateChanged(ChangeEvent e) {
 			Ponto t = view.getValorT();
 			double a = view.getValorR();
+			Ponto s = view.getValorS();
 			
-			model.makeTransformacoes(t, a);
+			model.makeTransformacoes(t, a, s);
 			Desenho desenho = model.getDesenho();
 			
 			view.atualiza(desenho);

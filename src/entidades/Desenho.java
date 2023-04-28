@@ -56,6 +56,17 @@ public class Desenho {
 		this.pontos = pontosResultantes;
 	}
 	
-	
+	public void makeEscala(double sX, double sY) {
+		List<Ponto> pontosResultantes = new ArrayList<>();
+		Ponto pontoCentral = getPontoCentral();
+		for(Ponto p: pontos) {
+			Ponto novoPonto = new Ponto(p.x, p.y);
+			novoPonto = Transformacoes.translada(novoPonto, -pontoCentral.x, -pontoCentral.y);
+			novoPonto = Transformacoes.escala(novoPonto, sX, sY);
+			novoPonto = Transformacoes.translada(novoPonto, pontoCentral.x, pontoCentral.y);
+			pontosResultantes.add(novoPonto);
+		}
+		this.pontos = pontosResultantes;
+	}
 
 }
