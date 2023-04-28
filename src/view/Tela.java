@@ -8,8 +8,8 @@ import java.util.List;
 
 import javax.swing.JPanel;
 
-import entity.Desenho;
-import entity.Ponto;
+import entidades.Desenho;
+import entidades.Ponto;
 import model.Transformacoes;
 
 public class Tela extends JPanel {

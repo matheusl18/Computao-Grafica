@@ -1,5 +1,5 @@
 package model;
-import entity.Ponto;
+import entidades.Ponto;
 
 public class Transformacoes {
 	

@@ -6,8 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import entity.Desenho;
-import entity.Ponto;
+import entidades.Desenho;
+import entidades.Ponto;
 
 public class Janela extends JFrame {
 	

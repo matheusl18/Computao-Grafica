@@ -3,8 +3,8 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-import entity.Desenho;
-import entity.Ponto;
+import entidades.Desenho;
+import entidades.Ponto;
 
 public class Model {
 	

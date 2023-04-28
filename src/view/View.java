@@ -2,8 +2,8 @@ package view;
 
 import javax.swing.event.ChangeListener;
 
-import entity.Desenho;
-import entity.Ponto;
+import entidades.Desenho;
+import entidades.Ponto;
 
 public class View {
 	

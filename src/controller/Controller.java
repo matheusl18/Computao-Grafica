@@ -3,8 +3,8 @@ package controller;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import entity.Desenho;
-import entity.Ponto;
+import entidades.Desenho;
+import entidades.Ponto;
 import model.Model;
 import view.View;
 
