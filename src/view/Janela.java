@@ -19,7 +19,7 @@ public class Janela extends JFrame {
 		add(new Tela(), BorderLayout.CENTER);
 		
 		
-		setVisible(true);
+		setVisible(false);
 		
 	}
 
