@@ -16,7 +16,7 @@ public class Controller {
 	public Controller() {
 		model = new Model();
 		view = new View(model.getDesenho());
-		
+			
 		view.adicionaListenerSlide(new MudaSlide());
 	}
 	

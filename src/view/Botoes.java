@@ -15,8 +15,8 @@ public class Botoes extends JPanel {
 	JSlider sliderSX = new JSlider(1, 5, 1);
 	JSlider sliderSY = new JSlider(1, 5, 1);
 	
-	JSlider sliderCX = new JSlider(0, 5, 0);
-	JSlider sliderCY = new JSlider(0, 5, 0);
+	JSlider sliderCX = new JSlider(-5, 5, 0);
+	JSlider sliderCY = new JSlider(-5, 5, 0);
 		
 	double rFator = 100;
 	JSlider sliderR = new JSlider(0, (int)(2*Math.PI*rFator), 0);
