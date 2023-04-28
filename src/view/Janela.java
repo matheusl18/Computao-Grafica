@@ -15,7 +15,7 @@ public class Janela extends JFrame {
 	Botoes botoes = new Botoes();
 	
 	public Janela(Desenho desenho) {
-		super("janela da primeira aula");
+		super("Trabalho Computação Grafica");
 		
 		tela = new Tela(desenho);
 		
