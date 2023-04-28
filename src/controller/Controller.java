@@ -27,8 +27,9 @@ public class Controller {
 			Ponto t = view.getValorT();
 			double a = view.getValorR();
 			Ponto s = view.getValorS();
+			Ponto c = view.getValorC();
 			
-			model.makeTransformacoes(t, a, s);
+			model.makeTransformacoes(t, a, s, c);
 			Desenho desenho = model.getDesenho();
 			
 			view.atualiza(desenho);

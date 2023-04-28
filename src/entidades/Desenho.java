@@ -68,5 +68,18 @@ public class Desenho {
 		}
 		this.pontos = pontosResultantes;
 	}
+	
+	public void makeCisalhamento(double cX, double cY) {
+		List<Ponto> pontosResultantes = new ArrayList<>();
+		Ponto pontoCentral = getPontoCentral();
+		for(Ponto p: pontos) {
+			Ponto novoPonto = new Ponto(p.x, p.y);
+			novoPonto = Transformacoes.translada(novoPonto, -pontoCentral.x, -pontoCentral.y);
+			novoPonto = Transformacoes.cisalhamento(novoPonto, cX, cY);
+			novoPonto = Transformacoes.translada(novoPonto, pontoCentral.x, pontoCentral.y);
+			pontosResultantes.add(novoPonto);
 
+		}
+		this.pontos = pontosResultantes;
+	}
 }
