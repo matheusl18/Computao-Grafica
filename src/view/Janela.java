@@ -50,6 +50,12 @@ public class Janela extends JFrame {
 				botoes.getValorSlideSX(), 
 				botoes.getValorSlideSY());
 	}
+	
+	public Ponto getValorSlideC() {
+		return new Ponto(
+				botoes.getValorSlideCX(), 
+				botoes.getValorSlideCY());
+	}
 
 	public double getValorSlideR() {
 		return botoes.getValorSlideR();

@@ -15,6 +15,9 @@ public class Botoes extends JPanel {
 	JSlider sliderSX = new JSlider(1, 5, 1);
 	JSlider sliderSY = new JSlider(1, 5, 1);
 	
+	JSlider sliderCX = new JSlider(1, 5, 1);
+	JSlider sliderCY = new JSlider(1, 5, 1);
+		
 	double rFator = 100;
 	JSlider sliderR = new JSlider(0, (int)(2*Math.PI*rFator), 0);
 	
@@ -28,6 +31,10 @@ public class Botoes extends JPanel {
 		add(sliderSX);
 		add(new Label("Escala em Y"));
 		add(sliderSY);
+		add(new Label("Cisalhamento em X"));
+		add(sliderCX);
+		add(new Label("Cisalhamento em Y"));
+		add(sliderCY);
 		add(new Label("Rotacao"));
 		add(sliderR);
 	}
@@ -48,6 +55,14 @@ public class Botoes extends JPanel {
 		return sliderSY.getValue();
 	}
 	
+	public int getValorSlideCX() {
+		return sliderSX.getValue();
+	}
+	
+	public int getValorSlideCY() {
+		return sliderSY.getValue();
+	}
+	
 	public double getValorSlideR() {
 		return (double)sliderR.getValue()/(double)rFator;
 	}
@@ -57,6 +72,8 @@ public class Botoes extends JPanel {
 		sliderTY.addChangeListener(cl);
 		sliderSX.addChangeListener(cl);
 		sliderSY.addChangeListener(cl);
+		sliderCX.addChangeListener(cl);
+		sliderCY.addChangeListener(cl);
 		sliderR.addChangeListener(cl);
 	}
 	

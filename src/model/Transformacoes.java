@@ -20,6 +20,15 @@ public class Transformacoes {
 		return new Ponto(res[0][0], res[0][1]);
 	}
 	
+	static public Ponto cisalhamento(Ponto p, double cX, double cY) {
+		double[][] m1 = {{p.x, p.y}};
+		double[][] m2 = 
+			{{1,  cY},
+			 { cX, 1}};
+		double[][] res = multiplica(m1, m2);
+		return new Ponto(res[0][0], res[0][1]);
+	}
+	
 	static public Ponto rotacao(Ponto p, double a) {
 		double[][] m1 = {{p.x, p.y}};
 		double[][] m2 = 
