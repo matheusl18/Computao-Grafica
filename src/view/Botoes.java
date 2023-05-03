@@ -77,6 +77,16 @@ public class Botoes extends JPanel {
 		sliderR.addChangeListener(cl);
 	}
 	
+	public void reset() {
+		sliderTX.setValue(0);;
+		sliderTY.setValue(0);
+		sliderSX.setValue(1);
+		sliderSY.setValue(1);
+		sliderCX.setValue(0);
+		sliderCY.setValue(0);
+		sliderR.setValue(0);
+	}
+	
 	
 	
 

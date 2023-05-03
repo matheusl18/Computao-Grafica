@@ -5,16 +5,18 @@ import java.util.List;
 
 import entidades.Desenho;
 import entidades.Ponto;
+import view.Botoes;
 
 public class Model {
 	
-	static List<Ponto> pontos = new ArrayList<>();
+	public List<Ponto> pontos = new ArrayList<>();
 	{
-		pontos.add(new Ponto(250, 250));
-		pontos.add(new Ponto(350, 250));
+		pontos.add(new Ponto(300, 250));
 		pontos.add(new Ponto(350, 350));
 		pontos.add(new Ponto(250, 350));
+		
 	};
+
 	
 	Desenho desenho = new Desenho(pontos);
 	
@@ -33,6 +35,11 @@ public class Model {
 		desenho.makeEscala(s.x, s.y);
 		desenho.makeCisalhamento(c.x, c.y);
 		
+	}
+	
+	public void makeFormas(int s) {
+		desenho.reset();
+		desenho.makeFormas(s);
 	}
 	
 	public Desenho getDesenho() {

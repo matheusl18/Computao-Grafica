@@ -60,12 +60,16 @@ public class View {
 		return janela.getHexagono();
 	}
 	
-	public JRadioButton getHectagono() {
-		return janela.getHectagono();
+	public JRadioButton getHeptagono() {
+		return janela.getHeptagono();
 	}
 	
 	public JRadioButton getOctogono() {
 		return janela.getOctogono();
+	}
+	
+	public void reset() {
+		janela.reset();
 	}
 
 }

@@ -48,23 +48,54 @@ public class Controller extends JFrame{
 	
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			if(e.getSource()==view.getQuadrado()) {
-				System.out.println("Quadrado");
+			view.reset();
+			if(e.getSource()==view.getTriangulo()) {
+				int s = 1;
+				model.makeFormas(s);
+				
+				Desenho desenho = model.getDesenho();
+				
+				view.atualiza(desenho);
 			}
-			else if(e.getSource()==view.getTriangulo()) {
-				System.out.println("Triangulo");
+			else if(e.getSource()==view.getQuadrado()) {
+				int s = 2;
+				model.makeFormas(s);
+				
+				Desenho desenho = model.getDesenho();
+				
+				view.atualiza(desenho);
 			}
 			else if(e.getSource()==view.getPentagono()) {
-				System.out.println("Pentagono");
+				int s = 3;
+				model.makeFormas(s);
+				
+				Desenho desenho = model.getDesenho();
+				
+				view.atualiza(desenho);
 			}
 			else if(e.getSource()==view.getHexagono()) {
-				System.out.println("Hexagono");
+				int s = 4;
+				model.makeFormas(s);
+				
+				Desenho desenho = model.getDesenho();
+				
+				view.atualiza(desenho);
 			}
-			else if(e.getSource()==view.getHectagono()) {
-				System.out.println("Hectagono");
+			else if(e.getSource()==view.getHeptagono()) {
+				int s = 5;
+				model.makeFormas(s);
+				
+				Desenho desenho = model.getDesenho();
+				
+				view.atualiza(desenho);
 			}
 			else if(e.getSource()==view.getOctogono()) {
-				System.out.println("Octogono");
+				int s = 6;
+				model.makeFormas(s);
+				
+				Desenho desenho = model.getDesenho();
+				
+				view.atualiza(desenho);
 			}
 			
 		}

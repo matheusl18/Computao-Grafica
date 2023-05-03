@@ -3,6 +3,7 @@ package entidades;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.Formas;
 import model.Transformacoes;
 
 public class Desenho {
@@ -13,6 +14,10 @@ public class Desenho {
 	public Desenho(List<Ponto> pontosIniciais) {
 		this.pontosInicial = pontosIniciais;
 	}
+	
+	/*public void guarda(List<Ponto> novospontosIniciais) {
+		pontosInicial = novospontosIniciais;
+	}*/
 	
 	public void reset() {
 		pontos = new ArrayList<>(pontosInicial);
@@ -81,5 +86,11 @@ public class Desenho {
 
 		}
 		this.pontos = pontosResultantes;
+	}
+	
+	public void makeFormas(int s) {
+		this.pontosInicial = Formas.Forma(s);
+		this.pontos = Formas.Forma(s);
+		
 	}
 }
