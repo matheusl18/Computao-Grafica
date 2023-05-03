@@ -1,5 +1,8 @@
 package view;
 
+import java.awt.event.ActionListener;
+
+import javax.swing.JRadioButton;
 import javax.swing.event.ChangeListener;
 
 import entidades.Desenho;
@@ -21,6 +24,10 @@ public class View {
 		janela.adicionaListenerSlide(cl);
 	}
 	
+	public void adicionaListenerRadio(ActionListener al) {
+		janela.adicionaListenerRadio(al);
+	}
+	
 	public Ponto getValorT() {
 		return janela.getValorSlideT();
 	}
@@ -35,6 +42,30 @@ public class View {
 
 	public double getValorR() {
 		return janela.getValorSlideR();
+	}
+	
+	public JRadioButton getQuadrado() {
+		return janela.getQuadrado();
+	}
+	
+	public JRadioButton getTriangulo() {
+		return janela.getTriangulo();
+	}
+	
+	public JRadioButton getPentagono() {
+		return janela.getPentagono();
+	}
+	
+	public JRadioButton getHexagono() {
+		return janela.getHexagono();
+	}
+	
+	public JRadioButton getHectagono() {
+		return janela.getHectagono();
+	}
+	
+	public JRadioButton getOctogono() {
+		return janela.getOctogono();
 	}
 
 }
