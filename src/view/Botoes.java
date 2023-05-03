@@ -10,7 +10,7 @@ import javax.swing.event.ChangeListener;
 public class Botoes extends JPanel {
 	
 	JSlider sliderTX = new JSlider(-300, 300, 0);
-	JSlider sliderTY = new JSlider(-300, 600, 0);
+	JSlider sliderTY = new JSlider(-300, 300, 0);
 	
 	JSlider sliderSX = new JSlider(1, 5, 1);
 	JSlider sliderSY = new JSlider(1, 5, 1);
