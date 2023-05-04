@@ -68,6 +68,10 @@ public class View {
 		return janela.getOctogono();
 	}
 	
+	public JRadioButton getCirculoo() {
+		return janela.getCirculo();
+	}
+	
 	public void reset() {
 		janela.reset();
 	}
