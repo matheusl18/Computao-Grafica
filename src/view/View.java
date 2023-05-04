@@ -68,7 +68,7 @@ public class View {
 		return janela.getOctogono();
 	}
 	
-	public JRadioButton getCirculoo() {
+	public JRadioButton getCirculo() {
 		return janela.getCirculo();
 	}
 	
