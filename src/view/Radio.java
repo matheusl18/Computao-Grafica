@@ -62,6 +62,11 @@ public class Radio extends JPanel {
 		return octogono;
 	}
 	
+	public JRadioButton getCirculo() {
+		return circulo;
+	}
+	
+	
 	
 	public void adicionaListenerRadio(ActionListener al) {
 		quadrado.addActionListener(al);
