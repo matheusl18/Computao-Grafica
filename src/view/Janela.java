@@ -38,6 +38,8 @@ public class Janela extends JFrame {
 		group.add(radio.hexagono);
 		group.add(radio.heptagono);
 		group.add(radio.octogono);
+	        group.add(radio.circulo);
+
 		
 		setVisible(true);
 		pack();
@@ -102,6 +104,10 @@ public class Janela extends JFrame {
 	public JRadioButton getOctogono() {
 		return radio.getOctogono();
 	}
+	
+	public JRadioButton getCirculo() {
+		return radio.getCirculo();
+	} 
 	
 	public void reset() {
 		botoes.reset();
