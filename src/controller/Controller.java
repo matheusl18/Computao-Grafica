@@ -98,6 +98,15 @@ public class Controller extends JFrame{
 				view.atualiza(desenho);
 			}
 			
+			else if(e.getSource()==view.getCirculo()) {
+				int s = 7;
+				model.makeFormas(s);
+				
+				Desenho desenho = model.getDesenho();
+				
+				view.atualiza(desenho);
+			}
+			
 		}
 	}
 	
