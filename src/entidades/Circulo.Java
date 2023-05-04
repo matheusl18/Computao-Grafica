@@ -1,70 +1,70 @@
-entidade do pacote ;
+package entidades;
 
-importar java. Pois é. geom. Caminho2D;
-importar java. Pois é. geom. Ponto 2D;
-importar java. Pois é. geom. Retângulo2D;
+import java.awt.geom.Path2D;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
 
 
-classe pública  Circulo estende Path2D. Dobrar {
-
-	Duplo Raio;
-	Ponto 2D. Duplo centro;
+public class Circulo extends Path2D.Double {
+	
+	double raio;
+	Point2D.Double centro;
 	int quantidadePontos;
-
-	 public Circulo(int aQuantidadePontos) {
-		súper();
-		isso. quantidadePontos = aQuantidadePontos;
-		centro = novo Point2D. Duplo(350, 350);
+	
+	public Circulo(int aQuantidadePontos) {
+		super();
+		this.quantidadePontos = aQuantidadePontos;
+		centro = new Point2D.Double(350, 350);
 		raio = 100;
-
+		
 		updateCirculo();
 	}
-
+	
 	public void updateQuantidadePontos(int aQuantidadePontos) {
-		isso. quantidadePontos = aQuantidadePontos;
+		this.quantidadePontos = aQuantidadePontos;
 		updateCirculo();
 	}
-
-	atualização de vazio privadoCirculo() {
-		repor();
-		duplo intervaloMinimo = 0, intervalorMaximo = 2*Matemática. PI;
-		duplo incremento = intervalorMaximo/quantidadePontos;
-
-		Ponto 2D. Ponto duploInicial = calculaPonto(intervaloMinimo );
-
-		moveTo(pontoInicial. x, pontoInicial. y);
-
-		para(int i=1; i<quantidadePontos; eu++) {
-			duplo t = i*incremento;
-			Ponto 2D. Duplo p = calculaPonto(t);
-			linhaTo(p. Págs. y);
+	
+	private void updateCirculo() {
+		reset();
+		double intervaloMinimo = 0, intervalorMaximo = 2*Math.PI;
+		double incremento = intervalorMaximo/quantidadePontos;
+		
+		Point2D.Double pontoInicial = calculaPonto(intervaloMinimo);
+		
+		moveTo(pontoInicial.x, pontoInicial.y);
+		
+		for(int i=1; i<quantidadePontos; i++) {
+			double t = i*incremento;
+			Point2D.Double p = calculaPonto(t);
+			lineTo(p.x, p.y);
 		}
-
-		fecharCaminho();
-
+		
+		closePath();
+		
 	}
-
-	 privado Point2D.  Duplo cálculoPonto(duplo t){
-		duplo x = centro. x + raio*Matemática. cos(t);
-		duplo y = centro. y + raio*Matemática. pecado(t);
-		retornar novo Point2D. Duplo(x, y);
+	
+	private Point2D.Double calculaPonto(double t){
+		double x = centro.x + raio*Math.cos(t);
+		double y = centro.y + raio*Math.sin(t);
+		return new Point2D.Double(x, y);
 	}
-
-
-
-	 público Point2D. Duplo getPontoCentral() {
-		Retângulo2D. Duplo retângulo = (Rectangle2D. Duplo)getBounds2D();
-
-		Ponto 2D. Canto duplo  = novo Point2D. Duplo(retangulo. x, retangulo. y);
-
-		Ponto 2D. Ponto duplo = novo Point2D. Dobrar(
-				canto. x + retangulo. largura/2, 
-				canto. y + retangulo. altura/2 
+	
+	
+	
+	public Point2D.Double getPontoCentral() {
+		Rectangle2D.Double retangulo = (Rectangle2D.Double)getBounds2D();
+		
+		Point2D.Double canto = new Point2D.Double(retangulo.x, retangulo.y);
+		
+		Point2D.Double pontoCentral = new Point2D.Double(
+				canto.x + retangulo.width/2, 
+				canto.y + retangulo.height/2 
 				);
-
-		retorno pontoCentral;
+		
+		return pontoCentral;
 	}
-
-
+	
+	
 
 }

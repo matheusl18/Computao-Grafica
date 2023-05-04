@@ -38,7 +38,7 @@ public class Janela extends JFrame {
 		group.add(radio.hexagono);
 		group.add(radio.heptagono);
 		group.add(radio.octogono);
-	        group.add(radio.circulo);
+	    group.add(radio.circulo);
 
 		
 		setVisible(true);
