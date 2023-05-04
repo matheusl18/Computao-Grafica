@@ -18,6 +18,8 @@ public class Radio extends JPanel {
 	JRadioButton hexagono = new JRadioButton("Hexagono");
 	JRadioButton heptagono = new JRadioButton("Heptagono");
 	JRadioButton octogono = new JRadioButton("Octogono");
+	JRadioButton circulo = new JRadioButton("Circulo");
+	
 	
 	
 		
@@ -33,7 +35,7 @@ public class Radio extends JPanel {
 		add(hexagono);
 		add(heptagono);
 		add(octogono);
-		
+		add(circulo); 
 	}
 	
 	public JRadioButton getQuadrado() {
@@ -68,6 +70,7 @@ public class Radio extends JPanel {
 		hexagono.addActionListener(al);
 		heptagono.addActionListener(al);
 		octogono.addActionListener(al);
+		circulo.addActionListener(al); 
 	}
 	
 	/*@Override
