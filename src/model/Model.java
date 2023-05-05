@@ -10,12 +10,7 @@ import view.Botoes;
 public class Model {
 	
 	public List<Ponto> pontos = new ArrayList<>();
-	{
-		pontos.add(new Ponto(300, 250));
-		pontos.add(new Ponto(350, 350));
-		pontos.add(new Ponto(250, 350));
-		
-	};
+	
 
 	
 	Desenho desenho = new Desenho(pontos);

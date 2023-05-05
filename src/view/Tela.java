@@ -40,19 +40,22 @@ public class Tela extends JPanel {
 			System.out.println("Desenho eh nulo");
 			return;
 		}
-		
-		Ponto pontoAnterior = pontos.get(pontos.size()-1);
-		Cores cor = Cores.values()[0];
-		for(Ponto pontoAtual: pontos) {
-			g2d.setColor(cor.getCor());
-			g2d.drawLine(
-					(int)pontoAnterior.x, (int)pontoAnterior.y, 
-					(int)pontoAtual.x,    (int)pontoAtual.y);
-			
-			cor = cor.next();
-			pontoAnterior = pontoAtual;
-			
+		else {
+			Ponto pontoAnterior = pontos.get(pontos.size()-1);
+			Cores cor = Cores.values()[0];
+			for(Ponto pontoAtual: pontos) {
+				g2d.setColor(cor.getCor());
+				g2d.drawLine(
+						(int)pontoAnterior.x, (int)pontoAnterior.y, 
+						(int)pontoAtual.x,    (int)pontoAtual.y);
+				
+				cor = cor.next();
+				pontoAnterior = pontoAtual;
+				
+			}
 		}
+		
+		
 		
 	}
 

@@ -90,7 +90,7 @@ public class Desenho {
 	
 	public void makeFormas(int s) {
 		this.pontosInicial = Formas.Forma(s);
-		this.pontos = Formas.Forma(s);
+		this.pontos = pontosInicial;
 		
 	}
 }
