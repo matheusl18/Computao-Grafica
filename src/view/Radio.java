@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JSlider;
@@ -20,8 +21,6 @@ public class Radio extends JPanel {
 	JRadioButton octogono = new JRadioButton("Octogono");
 	JRadioButton circulo = new JRadioButton("Circulo");
 	
-	
-	
 		
 	/*double rFator = 100;
 	JSlider sliderR = new JSlider(0, (int)(2*Math.PI*rFator), 0);*/
@@ -36,6 +35,7 @@ public class Radio extends JPanel {
 		add(heptagono);
 		add(octogono);
 		add(circulo); 
+		
 	}
 	
 	public JRadioButton getQuadrado() {
@@ -77,14 +77,6 @@ public class Radio extends JPanel {
 		octogono.addActionListener(al);
 		circulo.addActionListener(al); 
 	}
-	
-	/*@Override
-	public void actionPerformed(ActionEvent e) {
-		if(e.getSource()==quadrado) {
-			System.out.println("quadrado");
-		}
-		
-	}*/
 	
 	
 

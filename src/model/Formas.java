@@ -17,14 +17,12 @@ public class Formas {
 			pontos.add(new Ponto(300, 250));
 			pontos.add(new Ponto(350, 350));
 			pontos.add(new Ponto(250, 350));
-			System.out.println(s);
 			break;
 		case 2:
 			pontos.add(new Ponto(250, 250));
 			pontos.add(new Ponto(350, 250));
 			pontos.add(new Ponto(350, 350));
 			pontos.add(new Ponto(250, 350));
-			System.out.println(s);
 			break;
 		case 3:
 			pontos.add(new Ponto(230, 285));
@@ -32,7 +30,6 @@ public class Formas {
 	    	pontos.add(new Ponto(370, 285));
 			pontos.add(new Ponto(350, 385));
 			pontos.add(new Ponto(250, 385));
-			System.out.println(s);
 			break;
 		case 4:
 			pontos.add(new Ponto(250, 200));
@@ -41,7 +38,6 @@ public class Formas {
 			pontos.add(new Ponto(350, 400));
 			pontos.add(new Ponto(250, 400));
 			pontos.add(new Ponto(200, 300));
-			System.out.println(s);
 			break;
 		case 5:
 			pontos.add(new Ponto(220, 225));
@@ -51,7 +47,6 @@ public class Formas {
 			pontos.add(new Ponto(350, 410));
 			pontos.add(new Ponto(250, 410));
 			pontos.add(new Ponto(200, 325));
-			System.out.println(s);
 			break;
 		case 6:
 			pontos.add(new Ponto(200, 225));
@@ -62,10 +57,11 @@ public class Formas {
 			pontos.add(new Ponto(350, 410));
 			pontos.add(new Ponto(250, 410));
 			pontos.add(new Ponto(200, 325));
-			System.out.println(s);
 			break;
-		}
-		System.out.println(pontos);
+		case 7:
+			pontos.add(new Ponto(1, 1));
+			break;
+		}	
 		return pontos;
 	}
 

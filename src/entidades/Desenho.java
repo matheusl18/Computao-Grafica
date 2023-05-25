@@ -10,6 +10,7 @@ public class Desenho {
 	
 	List<Ponto> pontosInicial;
 	List<Ponto> pontos;
+
 	
 	public Desenho(List<Ponto> pontosIniciais) {
 		this.pontosInicial = pontosIniciais;

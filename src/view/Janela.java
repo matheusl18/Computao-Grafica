@@ -1,7 +1,9 @@
 package view;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.Shape;
 import java.awt.event.ActionListener;
+import java.awt.geom.Point2D;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
@@ -19,10 +21,10 @@ public class Janela extends JFrame {
 	Radio radio = new Radio();
 	
 	
-	public Janela(Desenho desenho) {
+	public Janela(Desenho desenho, Shape circulo) {
 		super("Trabalho Computação Grafica");
 		
-		tela = new Tela(desenho);
+		tela = new Tela(desenho, circulo);
 		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new BorderLayout());
@@ -55,8 +57,8 @@ public class Janela extends JFrame {
 		radio.adicionaListenerRadio(al);
 	}
 	
-	public void atualiza(Desenho desenho) {
-		tela.atualiza(desenho);
+	public void atualiza(Desenho desenho, Shape circulo) {
+		tela.atualiza(desenho, circulo);
 	}
 	
 	public Ponto getValorSlideT() {
@@ -64,6 +66,7 @@ public class Janela extends JFrame {
 				botoes.getValorSlideTX(), 
 				botoes.getValorSlideTY());
 	}
+	
 	
 	public Ponto getValorSlideS() {
 		return new Ponto(

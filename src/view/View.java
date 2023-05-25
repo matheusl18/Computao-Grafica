@@ -1,6 +1,8 @@
 package view;
 
+import java.awt.Shape;
 import java.awt.event.ActionListener;
+import java.awt.geom.Point2D;
 
 import javax.swing.JRadioButton;
 import javax.swing.event.ChangeListener;
@@ -12,12 +14,12 @@ public class View {
 	
 	Janela janela;
 	
-	public View(Desenho desenho) {
-		janela = new Janela(desenho);
+	public View(Desenho desenho, Shape circulo) {
+		janela = new Janela(desenho, circulo);
 	}
 	
-	public void atualiza(Desenho desenho) {
-		janela.atualiza(desenho);
+	public void atualiza(Desenho desenho, Shape circulo) {
+		janela.atualiza(desenho, circulo);
 	}
 	
 	public void adicionaListenerSlide(ChangeListener cl) {
@@ -31,6 +33,7 @@ public class View {
 	public Ponto getValorT() {
 		return janela.getValorSlideT();
 	}
+	
 
 	public Ponto getValorS() {
 		return janela.getValorSlideS();
